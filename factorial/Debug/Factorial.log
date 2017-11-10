@@ -1,0 +1,20 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (Factorial.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  Clip.cpp
+  MyForm.cpp
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(214): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(223): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(245): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(254): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(284): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(294): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(304): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(314): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(324): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(334): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(344): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\aspire r5-571pg\desktop\task5k\factorial\MyForm.h(354): warning C4305: аргумент: усечение из "double" в "float"
+  Transform.cpp
+Transform.cpp(65): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+Transform.cpp(66): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Создание кода...
+  Factorial.vcxproj -> C:\Users\Aspire R5-571PG\Desktop\task5K\Debug\task5.exe

@@ -1,0 +1,36 @@
+﻿  MyForm.cpp
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(185): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(188): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(191): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(197): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(200): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(206): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(209): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(212): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(215): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(218): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(221): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(224): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(227): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(230): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(233): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(236): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(239): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(242): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(245): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(248): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(251): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(254): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(257): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(260): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(263): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(266): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(269): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(272): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(275): warning C4305: аргумент: усечение из "double" в "float"
+c:\users\uzer\source\repos1\factorial\factorial\MyForm.h(278): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  Transform.cpp
+Transform.cpp(63): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+Transform.cpp(64): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  Создание кода...
+  Factorial.vcxproj -> C:\Users\Uzer\source\repos1\Factorial\x64\Debug\Factorial.exe
