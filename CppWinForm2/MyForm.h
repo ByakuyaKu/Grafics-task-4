@@ -38,6 +38,7 @@ namespace CppWinForm2 {
 		}
 
 	private:
+		Rectangle rect;	
 		System::Collections::Generic::List<line> lines;
 	private: System::Collections::Generic::List<polygon^> polygons;
 	float left, right, top, bottom;
@@ -122,51 +123,44 @@ namespace CppWinForm2 {
 	private: System::Void MyForm_Paint(System::Object^  sender, System::Windows::Forms::PaintEventArgs^  e)
 	{
 		Graphics^ g = e->Graphics;
-		g->Clear(Color::White);
 
+		Pen^ blackPen = gcnew Pen(Color::Red, 0.5);
+		Pen^ rectPen = gcnew Pen(Color::Blue, 2);
 
-		Rectangle rect = Form::ClientRectangle;
-		Rectangle smallRect;
-
-		Pen^ blackPen = gcnew Pen(Color::Black);
-		Pen^ rectPen = gcnew Pen(Color::Red);
-		g->DrawRectangle(rectPen, Wcx, top, Wx, Wy);
-		blackPen->Width = 2;
-		rectPen->Width = 4;
-		System::Drawing::Font^ drawFont = gcnew System::Drawing::Font("Arial", 12);
-		SolidBrush^ drawBrush = gcnew SolidBrush(Color::Red);
-
+		rect = System::Drawing::Rectangle(Wcx, top, Wx, Wy);
+		g->DrawRectangle(rectPen, rect);
 
 		point Pmin, Pmax;
-		Pmin.x = Wcx;
-		Pmin.y = Wcy - Wy;
-		Pmax.x = Wcx + Wx;
-		Pmax.y = Wcy;
+		Pmin.x = left;
+		Pmin.y = top;
+		Pmax.x = Form::ClientRectangle.Width - right;
+		Pmax.y = Form::ClientRectangle.Height - bottom;
 
-		for (int i = 0; i < polygons.Count; i++)
-		{
-			polygon^ p = polygons[i];
-			polygon^ p2 = gcnew polygon(0);
+		for (int i = 0; i < polygons.Count; i++) {
+			polygon ^ p = polygons[i];
+			polygon ^ p1 = gcnew polygon(0);
 			point a, b, c;
 			vec A, B, A1, B1;
-			point2vec(p[p->Count - 1], A);
-			timesMatVec(T, A, A1);
-			vec2point(A1, a);
-			p2->Add(a);
-
 			for (int j = 0; j < p->Count; j++)
 			{
 				point2vec(p[j], B);
 				timesMatVec(T, B, B1);
 				vec2point(B1, b);
-				p2->Add(b);
+				p1->Add(b);
 			}
-			p = PClip(p2, Pmin, Pmax);
-			for (int j = 0; j < p->Count - 1; j++)
+			p1 = PClip(p1, Pmin, Pmax);
+			if (p1->Count != 0)
 			{
-				g->DrawLine(blackPen, p[j].x, p[j].y, p[j + 1].x, p[j + 1].y);
+				a = p1[p1->Count - 1];
+				for (int j = 0; j < p1->Count; j++)
+				{
+					b = p1[j];
+					g->DrawLine(blackPen, a.x, a.y, b.x, b.y);
+					a = b;
+				}
 			}
 		}
+	}
 		/*Graphics^ g;
 		g = e->Graphics;
 		Pen^ blackPen = gcnew Pen(Color::Black);
@@ -204,7 +198,7 @@ namespace CppWinForm2 {
 				}
 			}
 		}*/
-	}
+	
 
 	private: System::Void btnOpen_Click(System::Object^  sender, System::EventArgs^  e) {
 		if (this->openFileDialog->ShowDialog() ==
